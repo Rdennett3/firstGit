@@ -1,5 +1,16 @@
-var count = 1;
+$(document).ready(function() {
+  $("button#hello").click(function() {
+    $("ul#user").prepend("<li>Hello! <span class='clickable delete'></span></li>");
+    $("ul#webpage").prepend("<li>Why hello there! <span class='clickable delete'></span></li>");
+    $('li').click(function() {
+      $(this).remove();
+    });
+  });
+});
 
+
+
+var count = 1;
 
 
 function updateHeader(){
