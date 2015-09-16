@@ -1,11 +1,24 @@
 $(document).ready(function() {
   $("button#hello").click(function() {
+    $('h1#demo').after('<h2>New subheading</h2>');
     $("ul#user").prepend("<li>Hello! <span class='clickable delete'></span></li>");
     $("ul#webpage").prepend("<li>Why hello there! <span class='clickable delete'></span></li>");
     $('li').click(function() {
       $(this).remove();
     });
+      $('h2').click(function(){
+        $(this).remove();
+    });
   });
+  $(".toggle").click(function() {
+    $("#showing").fadeToggle("slow");
+    $("#hidden").fadeToggle("slow");
+    });
+
+
+
+
+
 });
 
 

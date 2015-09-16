@@ -13,49 +13,60 @@
   <body>
 
     <div class="container">
+      <div class="topHalf">
 
-      <h1>things to do with click</h1>
-
-      <h1 id="header">JavaScript example</h1>
-      <input type="text" id="mytextbox" placeholder="Your Name"/>
-      <input id="btn" type="button" value="enter name" onclick="updateHeader()" />
-
+          <h1 id="header">JavaScript example</h1>
+          <input type="text" id="mytextbox" placeholder="Your Name"/>
+          <input id="btn" type="button" value="enter name" onclick="updateHeader()" />
 
 
 
-      <h1>Fahrenheit to celcius conversion! </h1>
-      <input type="text" id="myothertextbox"/>
-      <input id="degrees" type="button" value="Enter degrees Fahrenheit" onclick="convert()" />
+
+          <h1>Fahrenheit to celcius conversion! </h1>
+          <input type="text" id="myothertextbox"/>
+          <input id="degrees" type="button" value="Enter degrees Fahrenheit" onclick="convert()" />
 
 
 
-      <h1>Pretty print your quotient</h1>
-      <input type="text" id="num" placeholder="numerator"/>
-      <input type="text" id="den" placeholder="denominator"/>
-      <input id="den button" type="button" value="enter denominator" onclick="prettyQuot()" />
+          <h1>Pretty print your quotient</h1>
+          <input type="text" id="num" placeholder="numerator"/>
+          <input type="text" id="den" placeholder="denominator"/>
+          <input id="den button" type="button" value="Pretty Print!" onclick="prettyQuot()" />
 
-      <h1>Talk to the web page</h1>
-      <p>Click a button to say something to the web page. See what it says back!</p>
+          <h1 id="demo">Talk to the web page</h1>
+          <p>Click a button to say something to the web page. See what it says back!</p>
 
-      <button class="btn btn-primary" id="hello">Say "hello"</button>
+          <button class="btn btn-primary" id="hello">Say "hello"</button>
+      </div>
 
       <div class="row">
-        <div class="col-md-6">
-          <h2>You said:</h2>
-          <ul class="unstyled" id="user">
+          <div class="col-md-6">
+            <h2>You said:</h2>
+            <ul class="unstyled" id="user">
 
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <div class="col-md-6">
-          <h2>The web page said back:</h2>
-          <ul class="unstyled" id="webpage">
+          <div class="col-md-6">
+            <h2>The web page said back:</h2>
+            <ul class="unstyled" id="webpage">
+            </ul>
+          </div>
+      </div>
 
-          </ul>
-        </div>
-</div>
+      <div class="row">
+          <div class="col-md-6 neatBox toggle" id="hidden" >
+          <h3> press here for an exciting revelation!</h3>
+          </div>
 
-    </div>
+          <div class="col-md-6 neatBox toggle" id="showing">
+            <h3> MINASWAN! </h3>
+            <img src="mats.JPG">
+          </div>
+      </div>
+
+
+      </div>
     </body>
 </HTML>
 

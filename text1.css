@@ -4,8 +4,19 @@ body{
 
 
 h1{
-  color: black;
-  background-color: "red";
+  color: black;;
 }
 
+h2{
+  color:blue;
+}
 
+.neatBox{
+
+  background-color: green;
+
+}
+
+#showing {
+  display: none;
+}
