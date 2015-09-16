@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 
 
+
+
 var count = 1;
 
 
@@ -54,12 +56,13 @@ function prettyQuot(){
   var x=document.getElementById("num").value;
   var y=document.getElementById("den").value;
   var mod=(x%y);
-  var quot=(x/y);
-  quot=quot.toString();
-  decimal=quot.indexOf(".");
-  newquot=quot.substring(0,decimal);
-  if (newquot=="") {
-    (newquot = quot);
-  }
-  window.alert(newquot + "r" + mod.toString());
+  var quot;
+  quot=(x/y);
+  quot=parseInt(quot);
+  // quot=quot.toString();
+  // decimal=quot.indexOf(".");
+  // newquot=quot.substring(0,decimal);
+  // if (newquot=="") {
+  //   (newquot = quot);
+  window.alert(quot + "r" + mod);
 }
