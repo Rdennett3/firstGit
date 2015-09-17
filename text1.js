@@ -74,8 +74,11 @@ function displayRides(y){
     });
   });
   $(".toggle").click(function() {
+<<<<<<< Updated upstream
     $("#showing").toggle();
     $("#hidden").toggle();
+=======
+>>>>>>> Stashed changes
     });
 
 
